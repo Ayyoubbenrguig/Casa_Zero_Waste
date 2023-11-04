@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      background-color: #09cff1;
+    }
+
+    th, td {
+      border: 2px soli black;
+      padding: 8px;
+      text-align: centre;
+      font-weight: bold;
+    }
+
+    th {
+      background-color: #a39f9f;
+    }
+    
+    td:nth-child(2) { /* Sélecteur pour la deuxième colonne (Immatricule) */
+    font-size: 20px; /* Modifier la taille de police ici */
+    color: red; /* Modifier la couleur ici */
+    font-weight: bold; /* Ajouter la propriété pour écrire en gras */
+  } 
+  .green-button {
+      background-color: rgb(7, 50, 243);
+      color: white;
+    }
+  </style>
+  <script>
+    function changeEtat(rowNumber, colNumber) {
+      var table = document.getElementById("myTable");
+      var cell = table.rows[rowNumber].cells[colNumber];
+      var currentEtat = cell.innerHTML;
+      
+      if (currentEtat === 'Aucun') {
+        cell.innerHTML = 'Oui';
+      } else {
+        cell.innerHTML = 'Aucun';
+      }
+    }
+  </script>
+</head>
+<body>
+  <table id="myTable">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>localisation</th>
+        <th>taux de Remplissage</th>
+        <th>le poids(en Kg)</th>
+        <th>problème</th>
+        <th>Modification</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>[-7.619075,33.480825]</td>
+        <td> 60%</td>
+        <td>24</td>
+        <td>Aucun</td>
+        <td><button onclick="changeEtat(1, 4)" class="green-button">changer</button></td>
+        
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>[-7.619075,33.450825]</td>
+        <td> 70%</td>
+        <td>34</td>
+        <td>Aucun</td>
+        <td><button onclick="changeEtat(2, 4)" class="green-button">changer</button></td>
+
+        
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>[-7.621959,33.479610]</td>
+        <td> 30%</td>
+        <td>24</td>
+        <td>Aucun</td>
+        <td><button onclick="changeEtat(3, 4)" class="green-button">changer</button></td>
+        
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>[-7.619384,33.480702]</td>
+        <td> 72%</td>
+        <td>45</td>
+        <td>Aucun</td>
+        <td><button onclick="changeEtat(4, 4)" class="green-button">changer</button></td>
+        
+      </tr>
+      <tr>
+        <td>5</td>
+        <td> [-7.618612,.47873356]</td>
+        <td> 42%</td>
+        <td>19</td>
+        <td>Aucun</td>
+        <td><button onclick="changeEtat(5, 4)" class="green-button">changer</button></td>
+        
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>[-7.618612,33.478756]</td>
+        <td> 51%</td>
+        <td>37</td>
+        <td>Aucun</td>
+        <td><button onclick="changeEtat(6, 4)" class="green-button">changer</button></td>
+        
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>[-7.621834,33.482621]</td>
+        <td> 5%</td>
+        <td>2.6</td>
+        <td>Aucun</td>
+        <td><button onclick="changeEtat(7, 4)" class="green-button">changer</button></td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>[-7.618612,.47873356]</td>
+        <td> 34%</td>
+        <td>27</td>
+        <td>Oui</td>
+        <td><button onclick="changeEtat(8, 4)" class="green-button">changer</button></td>
+        
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>[-7.618612,33.478756]</td>
+        <td> 63%</td>
+        <td>12%</td>
+        <td>Aucun</td>
+        <td><button onclick="changeEtat(9, 4)" class="green-button">changer</button></td>
+        
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>[-7.621834,33.482621]</td>
+        <td> 5%</td>
+        <td>2</td>
+        <td>Oui</td>
+        <td><button onclick="changeEtat(10, 4)" class="green-button">changer</button></td>
+        
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>[-7.617864637385763,33.48412590155179]</td>
+        <td> 17%</td>
+        <td>9.5</td>
+        <td>Aucun</td>
+        <td><button onclick="changeEtat(11, 4)" class="green-button">changer</button></td>
+        
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>[-7.61216283467508,33.481718007782746]</td>
+        <td> 91%</td>
+        <td>43</td>
+        <td>Aucun</td>
+        <td><button onclick="changeEtat(12, 4)" class="green-button">changer</button></td>
+        
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>[-7.610719340317945,33.4720857633919]</td>
+        <td> 62%</td>
+        <td>41</td>
+        <td>Aucun</td>
+        <td><button onclick="changeEtat(13, 4)" class="green-button">changer</button></td>
+        
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>[-7.619016,33.574426]</td>
+        <td> 5%</td>
+        <td>1</td>
+        <td>Aucun</td>
+        <td><button onclick="changeEtat(14, 4)" class="green-button">changer</button></td>
+        
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>[-7.654793,33.567015]</td>
+        <td>31%</td>
+        <td>10</td>
+        <td>Aucun</td>
+        <td><button onclick="changeEtat(15, 4)" class="green-button">changer</button></td> 
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      background-color: #bcc99e;
+    }
+
+    th, td {
+      border: 2px soli black;
+      padding: 8px;
+      text-align: centre;
+      font-weight: bold;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+    
+    td:nth-child(2) { /* Sélecteur pour la deuxième colonne (Immatricule) */
+    font-size: 20px; /* Modifier la taille de police ici */
+    color: red; /* Modifier la couleur ici */
+    font-weight: bold; /* Ajouter la propriété pour écrire en gras */
+  } 
+  .green-button {
+      background-color: rgb(94, 243, 7);
+      color: white;
+    }
+  </style>
+  <script>
+    function changeEtat(rowNumber, colNumber) {
+      var table = document.getElementById("myTable");
+      var cell = table.rows[rowNumber].cells[colNumber];
+      var currentEtat = cell.innerHTML;
+      
+      if (currentEtat === 'Occupé') {
+        cell.innerHTML = 'Disponible';
+      } else {
+        cell.innerHTML = 'Occupé';
+      }
+    }
+  </script>
+</head>
+<body>
+  <table id="myTable">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th class="immatricule">Immatricule</th>
+        <th>Capacité(en tonnes)</th>
+        <th>Type de carburant</th>
+        <th>Etat </th>
+        <th>Modification</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>56</td>
+        <td>AB67890</td>
+        <td> 5</td>
+        <td>Essence</td>
+        <td>Disponible</td>
+        <td><button onclick="changeEtat(1, 4)" class="green-button">changer</button></td>
+        <td></td>
+        
+      </tr>
+      <tr>
+        <td>56</td>
+        <td>CD78493</td>
+        <td> 5</td>
+        <td>Essence</td>
+        <td>Occupé</td>
+        <td><button onclick="changeEtat(2, 4)" class="green-button">changer</button></td>
+
+        
+      </tr>
+      <tr>
+        <td>89</td>
+        <td>EF45163</td>
+        <td> 3</td>
+        <td><Em></Em>ssence</td>
+        <td>Occupé</td>
+        <td><button onclick="changeEtat(3, 4)" class="green-button">changer</button></td>
+        
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>AC31852</td>
+        <td> 3</td>
+        <td>Essence</td>
+        <td>Disponible</td>
+        <td><button onclick="changeEtat(4, 4)" class="green-button">changer</button></td>
+        
+      </tr>
+      <tr>
+        <td>64</td>
+        <td>AD49117</td>
+        <td> 2</td>
+        <td>Diesel</td>
+        <td>Disponible</td>
+        <td><button onclick="changeEtat(5, 4)" class="green-button">changer</button></td>
+        
+      </tr>
+      <tr>
+        <td>19</td>
+        <td>CD67890</td>
+        <td> 5</td>
+        <td>Essence</td>
+        <td>Disponible</td>
+        <td><button onclick="changeEtat(6, 4)" class="green-button">changer</button></td>
+        
+      </tr>
+      <tr>
+        <td>60</td>
+        <td>BD67890</td>
+        <td> 5</td>
+        <td>Essence</td>
+        <td>Occupé</td>
+        <td><button onclick="changeEtat(7, 4)" class="green-button">changer</button></td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>AG31142</td>
+        <td> 5</td>
+        <td>Essence</td>
+        <td>Occupé</td>
+        <td><button onclick="changeEtat(8, 4)" class="green-button">changer</button></td>
+        
+      </tr>
+      <tr>
+        <td>42</td>
+        <td>AM69548</td>
+        <td> 3</td>
+        <td>Essence</td>
+        <td>Disponible</td>
+        <td><button onclick="changeEtat(9, 4)" class="green-button">changer</button></td>
+        
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>AH83459</td>
+        <td> 5</td>
+        <td>Diesel</td>
+        <td>Disponible</td>
+        <td><button onclick="changeEtat(10, 4)" class="green-button">changer</button></td>
+        
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>CD62530</td>
+        <td> 5</td>
+        <td>Diesel</td>
+        <td>Disponible</td>
+        <td><button onclick="changeEtat(11, 4)" class="green-button">changer</button></td>
+        
+      </tr>
+      <tr>
+        <td>102</td>
+        <td>BH91625</td>
+        <td> 3</td>
+        <td>Essence</td>
+        <td>Occupé</td>
+        <td><button onclick="changeEtat(12, 4)" class="green-button">changer</button></td>
+        
+      </tr>
+      <tr>
+        <td>36</td>
+        <td>AF67090</td>
+        <td> 5</td>
+        <td>Essence</td>
+        <td>Occupé</td>
+        <td><button onclick="changeEtat(13, 4)" class="green-button">changer</button></td>
+        
+      </tr>
+      <tr>
+        <td>56</td>
+        <td>CD67890</td>
+        <td> 5</td>
+        <td>Essence</td>
+        <td>Disponible</td>
+        <td><button onclick="changeEtat(14, 4)" class="green-button">changer</button></td>
+        
+      </tr>
+      <tr>
+        <td>49</td>
+        <td>BH64190</td>
+        <td>3</td>
+        <td>Diesel</td>
+        <td>Disponible</td>
+        <td><button onclick="changeEtat(15, 4)" class="green-button">changer</button></td> 
+      </tr>
+      <tr>
+        <td>60</td>
+        <td>AE64400</td>
+        <td> 5</td>
+        <td>Diesel</td>
+        <td>Occupé</td>
+        <td><button onclick="changeEtat(16, 4)" class="green-button">changer</button></td>
+        
+      </tr>
+      <tr>
+        <td>77</td>
+        <td>AC96520</td>
+        <td> 2.5</td>
+        <td>Essence</td>
+        <td>Disponible</td>
+        <td><button onclick="changeEtat(17, 4)" class="green-button">changer</button></td>
+        
+      </tr>
+      <tr>
+        <td>95</td>
+        <td>CD96090</td>
+        <td> 5</td>
+        <td>Essence</td>
+        <td>Occupé</td>
+        <td><button onclick="changeEtat(18, 4)" class="green-button">changer</button></td>
+        
+      </tr>
+      <tr>
+        <td>31</td>
+        <td>CD692300</td>
+        <td> 5</td>
+        <td>Gaz</td>
+        <td>Disponible</td>
+        <td><button onclick="changeEtat(19, 4)" class="green-button">changer</button></td>
+        
+      </tr>
+      <tr>
+        <td>56</td>
+        <td>AW548210</td>
+        <td> 5</td>
+        <td>Essence</td>
+        <td>Disponible</td>
+        <td><button onclick="changeEtat(20, 4)" class="green-button">changer</button></td>        
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>AD97890</td>
+        <td> 5</td>
+        <td>Essence</td>
+        <td>Disponible</td>
+        <td><button onclick="changeEtat(21, 4)" class="green-button">changer</button></td>
+        
+      </tr>
+      <tr>
+        <td>78</td>
+        <td>BW67890</td>
+        <td> 5</td>
+        <td>Essence</td>
+        <td>Occupé</td>
+        <td><button onclick="changeEtat(22, 4)" class="green-button">changer</button></td>
+        
+      </tr>
+    
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
