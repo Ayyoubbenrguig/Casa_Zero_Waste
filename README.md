@@ -1,5 +1,9 @@
 # Casa Zero Waste
 
+<p align="center">
+  <img src="images/poster.png" alt="Poster de Casa zero waste" width="800"/>
+</p>
+
 **Project Duration**: 9 months  
 **Goal**: To improve the quality of life for citizens by optimizing waste collection in Casablanca through smart waste management solutions.
 
