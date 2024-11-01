@@ -46,7 +46,7 @@ The system functions by:
 4. Allowing citizens to find and monitor bin availability via a mobile app.
 
 <p align="center">
-  <img src="images/function.jpg" alt="System Functionality" width="500"/>
+  <img src="images/Function.png" alt="System Functionality" width="500"/>
 </p>
 
 ### Technologies Used
@@ -69,19 +69,19 @@ The system functions by:
 
 ### Plateforme Web
 <p align="center">
-  <img src="images/platforme_wep.jpg" alt="Description de l'image" width="500"/>
+  <img src="images/platforme_wep.png" alt="Description de l'image" width="500"/>
 </p>
 La plateforme web permet aux gestionnaires de surveiller en temps réel l’état des poubelles dans toute la ville, facilitant la planification des collectes pour éviter le débordement.
 
 ### Application Mobile
 <p align="center">
-  <img src="images/application_wep.jpg" alt="Description de l'image" width="500"/>
+  <img src="images/application_wep.png" alt="Description de l'image" width="500"/>
 </p>
 L’application mobile permet aux citoyens de vérifier l’état de remplissage des poubelles et de planifier leurs dépôts en conséquence.
 
 ### Prototype de la Poubelle Intelligente
 <p align="center">
-  <img src="images/smart_bin.jpg" alt="Smart_bin" width="500"/>
+  <img src="images/smart_bin.png" alt="Smart_bin" width="500"/>
 </p>
 Le prototype de la poubelle intelligente est équipé de capteurs et de panneaux solaires, permettant une gestion autonome et durable des déchets.
 
