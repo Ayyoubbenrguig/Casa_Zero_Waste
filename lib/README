@@ -1,46 +1,54 @@
+# Project Libraries Directory
 
-This directory is intended for project specific (private) libraries.
-PlatformIO will compile them to static libraries and link into executable file.
+This directory contains project-specific (private) libraries that PlatformIO will compile into static libraries and link into the executable file. Each library should be placed in its own separate directory within the `lib` folder.
 
-The source code of each library should be placed in a an own separate directory
-("lib/your_library_name/[here are source files]").
+## Directory Structure
 
-For example, see a structure of the following two libraries `Foo` and `Bar`:
+Organize your libraries in the following structure:
 
-|--lib
-|  |
-|  |--Bar
-|  |  |--docs
-|  |  |--examples
-|  |  |--src
-|  |     |- Bar.c
-|  |     |- Bar.h
-|  |  |- library.json (optional, custom build options, etc) https://docs.platformio.org/page/librarymanager/config.html
-|  |
-|  |--Foo
-|  |  |- Foo.c
-|  |  |- Foo.h
-|  |
-|  |- README --> THIS FILE
-|
-|- platformio.ini
-|--src
-   |- main.c
-
-and a contents of `src/main.c`:
 ```
+|-- lib
+|   |-- Bar
+|   |   |-- docs            # Documentation for the Bar library
+|   |   |-- examples        # Example usage of the Bar library
+|   |   |-- src             # Source files for the Bar library
+|   |       |- Bar.c
+|   |       |- Bar.h
+|   |   |- library.json     # Optional, custom build options for Bar library (see PlatformIO documentation)
+|   |
+|   |-- Foo
+|   |   |- Foo.c            # Source file for the Foo library
+|   |   |- Foo.h
+|   |
+|   |- README.md            # This README file
+|
+|-- platformio.ini          # PlatformIO configuration file
+|-- src
+    |- main.c               # Main source file of the project
+```
+
+### Example Code in `src/main.c`
+
+The main source file can include the libraries like so:
+
+```c
 #include <Foo.h>
 #include <Bar.h>
 
 int main (void)
 {
-  ...
+    // Your code here
 }
-
 ```
 
-PlatformIO Library Dependency Finder will find automatically dependent
-libraries scanning project source files.
+## PlatformIO Library Dependency Finder
 
-More information about PlatformIO Library Dependency Finder
-- https://docs.platformio.org/page/librarymanager/ldf.html
+PlatformIO's Library Dependency Finder (LDF) will automatically scan the project source files to find and include the necessary libraries. This feature simplifies library management, so you don’t need to manually specify library dependencies.
+
+For more information on the PlatformIO Library Dependency Finder, refer to the official documentation:
+- [PlatformIO Library Dependency Finder](https://docs.platformio.org/page/librarymanager/ldf.html)
+
+## Additional Resources
+
+If you need custom build options or other configurations for your libraries, you can add a `library.json` file in each library’s directory. Learn more about custom build options here:
+- [PlatformIO Library Configuration](https://docs.platformio.org/page/librarymanager/config.html)
