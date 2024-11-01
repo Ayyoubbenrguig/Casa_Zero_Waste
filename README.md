@@ -1,7 +1,7 @@
 # Casa Zero Waste
 
 <p align="center">
-  <img src="images/poster.png" alt="Poster de Casa zero waste" width="800"/>
+  <img src="images/Poster.png" alt="Poster de Casa zero waste" width="800"/>
 </p>
 
 **Project Duration**: 9 months  
